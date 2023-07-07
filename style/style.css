@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Nunito Sans, sans-serif;
+}
+
+:root{
+    --primary-color: #fdcc04;
+    --secondary-color: #262323;
+    --other-color: #978e8e; 
+}
+
+nav{
+    height: 10vh;
+    background-color: #302f2f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px calc((100vw - 1300px) / 2) ;
+    
+}
+
+.logo{
+    color: #fdcc04;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.logo img{
+    width: 50px;
+    display: inline;
+    }
+
+.logo h1{
+    display: inline;
+    font-size: 40px;
+}
+.nav-items a{
+    text-decoration: none;
+    color: #fdcc04;
+    padding: 0 10px;
+}
+
+.nav-items :hover{
+    color: #fff;
+    transition: ease-in-out 0.2s;
+}
+
+.hero {
+    background-color: #fdcc04;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90vh;
+    padding:0px calc((100vw - 1300px) / 2) ;
+}
+
+.column-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    color: #1f1f1f;
+    padding: 0rem 2rem;
+}
+.column-left h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+.column-left p{
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+.column-left button{
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fdcc04;
+    background-color: #262323;
+    border: 1px solid #262323;
+    cursor: pointer;
+}
+
+.column-left button:hover{
+   
+    background-color: #ffffff00;
+    color: black;
+    border: 1px solid #262323;
+    transition: ease-in-out 0.5s;
+}
+
+.column-right {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 0rem 2rem;
+  }
+
+  .column-right img{
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .logo h1{
+        font-size: 30px;
+    }
+    .hero{
+        grid-template-columns: 1fr;
+    }
+    .column-left h1{
+        font-size: 2.2rem;
+        margin: 1rem;
+    }
+    .column-left p{
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+    }
+  }
